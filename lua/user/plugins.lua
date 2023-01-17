@@ -53,6 +53,10 @@ return require('packer').startup(function(use)
     },
   }
 
+  use { "jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" } }
+
+  use {"nvim-treesitter/nvim-treesitter", run = ':TSUpdate'}
+
   if packer_bootstrap then
     require('packer').sync()
   end
