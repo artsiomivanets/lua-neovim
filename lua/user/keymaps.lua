@@ -59,6 +59,6 @@ keymap("n", "<leader>b", ":FzfLua buffers<CR>", opts)
 
 -- NvimTREE --
 keymap("n", "<leader><leader>", ":NvimTreeToggle<CR>", opts)
-keymap("n", "<C-n>", ":NvimTreeFindFile<CR>", opts)
+keymap("n", "<C-m>", ":NvimTreeFindFile<CR>", opts)
 
 
