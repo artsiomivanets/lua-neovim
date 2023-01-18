@@ -12,6 +12,7 @@ null_ls.setup({
         callback = function()
           vim.lsp.buf.format({
             bufnr = bufnr,
+            timeout_ms = 5000,
             filter = function(c)
               return c.name == "null-ls"
             end
@@ -24,8 +25,7 @@ null_ls.setup({
   sources = {
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.diagnostics.eslint_d,
-    null_ls.builtins.formatting.prettier,
-    null_ls.builtins.diagnostics.rubocop,
     null_ls.builtins.formatting.rubocop,
+    null_ls.builtins.formatting.prettier,
   },
 })
