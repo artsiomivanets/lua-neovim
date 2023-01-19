@@ -53,9 +53,34 @@ return require('packer').startup(function(use)
     },
   }
 
+  -- NULL-LS
   use { "jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" } }
 
-  use {"nvim-treesitter/nvim-treesitter", run = ':TSUpdate'}
+  -- TreeSitter
+  use { "nvim-treesitter/nvim-treesitter", run = ':TSUpdate' }
+
+  -- Nvim Surroud
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+  })
+
+  -- Autopairs
+  use { "windwp/nvim-autopairs" }
+
+  -- Comments
+  use { 'numToStr/Comment.nvim' }
+
+  use { 'RRethy/vim-illuminate' }
+
+  -- Statusline
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- Git
+  use { 'lewis6991/gitsigns.nvim' }
 
   if packer_bootstrap then
     require('packer').sync()
