@@ -61,4 +61,7 @@ keymap("n", "<leader>b", ":FzfLua buffers<CR>", opts)
 keymap("n", "<leader><leader>", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<C-m>", ":NvimTreeFindFile<CR>", opts)
 
+-- DiffView
+keymap("n", "<leader>do", ":DiffviewFileHistory<CR>", opts)
+keymap("n", "<leader>dc", ":DiffviewClose<CR>", opts)
 
