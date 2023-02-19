@@ -1,6 +1,11 @@
 # lua-neovim
 # Leader = Space
 
+# Recomendations
+
+<C-[> - ESC
+map <Caps Lock> to <Ctrl>
+
 # Requirenments
 - fzf
 - ripgrep
