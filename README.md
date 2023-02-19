@@ -9,7 +9,7 @@
 # Requirenments
 - fzf
 - ripgrep
-- nerdtree font
+- nerd font
 
 # Search
 - FZF: `<leader>fa`
