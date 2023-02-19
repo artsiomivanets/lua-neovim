@@ -3,8 +3,8 @@
 
 # Recomendations
 
-`<C-[> - ESC`
-`map <Caps Lock> to <Ctrl>`
+- `<C-[> - ESC`
+- `map <Caps Lock> to <Ctrl>`
 
 # Requirenments
 - fzf
